@@ -1,7 +1,7 @@
 Here's the README content, in text form:
 
 ## Project 1 — Advanced EDA & Feature Engineering
-*DecodeLabs Data Science Industrial Training Kit — Batch 2026*
+
 
 **Overview**
 Transforms a raw e-commerce orders dataset into a clean, mathematically sound, model-ready dataset. Follows an Input → Process → Output pipeline: secure input fidelity (missing values, outliers) → vectorized feature engineering and encoding → validated, ML-ready output.
@@ -51,7 +51,6 @@ Transforms a raw e-commerce orders dataset into a clean, mathematically sound, m
 
   # Project 2 — Supervised Learning (Fraud/Anomaly Detection Pipeline)
 
-DecodeLabs Data Science Industrial Training Kit — Batch 2026
 
 ## Important: dataset mismatch
 
@@ -139,14 +138,4 @@ fraud/cancellation pattern.
   signal out of a 0.17%-imbalance dataset — needs data where that
   signal actually exists.
 
-## Recommendation
 
-To actually exercise this pipeline the way the brief intends, run
-`project2_pipeline.py` against the real Kaggle "Credit Card Fraud
-Detection" dataset (`creditcard.csv`, 284,807 rows, `Class` column as
-target, 0.17% fraud rate) — the column names would need small
-adjustments (drop `Time`, use `Amount` + `V1`–`V28` as features,
-`Class` as target), but the pipeline logic (split → leak-free
-SMOTE/scale → GridSearchCV → Precision/Recall/ROC-AUC) is unchanged.
-Want me to adapt the script for that dataset if you have it or can
-download it?
